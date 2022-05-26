@@ -16,6 +16,16 @@ function dragDrop(event){
     if(dataBox===dataGroup){
         this.append(box)
     }
+};
+
+    boxs.forEach(box=>{
+        box.addEventListener("dragstart",dragSart)
+    });
+    group.forEach(group=>{
+        group.addEventListener("dragover",prevent)
+        group.addEventListener("drop",dragDrop)
+    });
+    
 
 
 
