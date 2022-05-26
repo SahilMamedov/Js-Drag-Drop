@@ -5,6 +5,10 @@ function prevent(event){
     event.preventDefault();
 
 }
+function dragSart(event){
+    let dataId=this.getAttribute("data-id")
+    event.dataTransfer.setData("data",dataId)
+}
 
 
 
